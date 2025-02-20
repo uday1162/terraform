@@ -18,7 +18,7 @@ resource "docker_image" "nginx2" {
 }
 
 resource "docker_container" "nginx2" {
-  image = docker_image.nginx.image_id
+  image = docker_image.nginx2.image_id
   name  = var.container2_name
   ports {
     internal = 80
